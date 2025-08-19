@@ -133,3 +133,41 @@ body::before {
     margin-top: 10px;
     display: none;
 }
+
+
+/* ✅ Responsive Breakpoints */
+
+/* Mobile (small screen) */
+@media (max-width: 480px) {
+  .card {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .search input {
+    width: 65%;
+    font-size: 14px;
+  }
+
+  .weather h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .card {
+    max-width: 500px;
+  }
+
+  .weather h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+  .card {
+    max-width: 600px;
+  }
+}
